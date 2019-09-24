@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5913,7 +5913,7 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <wire x1="139.7" y1="0" x2="139.7" y2="99.06" width="0.1524" layer="254"/>
 <wire x1="139.7" y1="99.06" x2="0" y2="99.06" width="0.1524" layer="254"/>
 <wire x1="0" y1="99.06" x2="0" y2="0" width="0.1524" layer="254"/>
-<text x="111.76" y="5.08" size="2.54" layer="254">Cali Board v1.0</text>
+<text x="111.76" y="5.08" size="2.54" layer="254">Cali Board v1.1</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="38.1" y="22.86" smashed="yes">
@@ -5979,12 +5979,6 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="GND@3"/>
-<wire x1="60.96" y1="12.7" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="10.16" y1="60.96" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
@@ -5997,10 +5991,42 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <wire x1="10.16" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="U$2" gate="G$1" pin="GND@2"/>
+<wire x1="71.12" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND@1"/>
+<wire x1="71.12" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="U$2" gate="G$1" pin="GND@3"/>
+<wire x1="60.96" y1="12.7" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="15.24" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="53.34" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="33.02" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="15.24" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
+<junction x="60.96" y="15.24"/>
+<junction x="53.34" y="33.02"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND@7"/>
+<wire x1="119.38" y1="22.86" x2="132.08" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="22.86" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND@6"/>
+<wire x1="119.38" y1="27.94" x2="127" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND@4"/>
+<wire x1="119.38" y1="48.26" x2="127" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND@5"/>
+<wire x1="119.38" y1="40.64" x2="127" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="127" y1="48.26" x2="127" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="GND@8"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="119.38" y1="58.42" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="58.42" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="127" y1="58.42" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="58.42" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="127" y1="48.26" x2="127" y2="58.42" width="0.1524" layer="91"/>
+<junction x="127" y="48.26"/>
+<junction x="127" y="58.42"/>
+<wire x1="127" y1="27.94" x2="127" y2="40.64" width="0.1524" layer="91"/>
+<junction x="127" y="40.64"/>
+<wire x1="132.08" y1="40.64" x2="127" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -6121,6 +6147,34 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <label x="15.24" y="10.16" size="1.27" layer="95"/>
 </segment>
 </net>
+<net name="GPIO4" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO4/GCKL"/>
+<wire x1="71.12" y1="55.88" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
+<label x="60.96" y="55.88" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="GPIO10" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO10/MOSI"/>
+<wire x1="71.12" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
+<label x="60.96" y="40.64" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="GPIO9" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO9/MISO"/>
+<wire x1="71.12" y1="38.1" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
+<label x="60.96" y="38.1" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="GPIO13" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO13"/>
+<wire x1="71.12" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
+<label x="60.96" y="22.86" size="1.27" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -6185,19 +6239,19 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <attribute name="VALUE" x="-15.24" y="13.97" size="1.778" layer="96" font="vector" rot="R270"/>
 <attribute name="NAME" x="-12.7" y="6.35" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
-<instance part="R4" gate="G$1" x="-17.78" y="15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="-19.2786" y="11.43" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-14.478" y="16.51" size="1.778" layer="96" rot="R90"/>
+<instance part="R4" gate="G$1" x="-22.86" y="10.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="-21.3614" y="13.97" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-26.162" y="8.89" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="P+2" gate="1" x="-17.78" y="27.94" smashed="yes">
-<attribute name="VALUE" x="-20.32" y="22.86" size="1.778" layer="96" rot="R90"/>
+<instance part="P+2" gate="1" x="-5.08" y="27.94" smashed="yes">
+<attribute name="VALUE" x="-7.62" y="22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R5" gate="G$1" x="-5.08" y="15.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="-6.5786" y="11.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-1.778" y="11.43" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+3V4" gate="G$1" x="-5.08" y="27.94" smashed="yes">
-<attribute name="VALUE" x="-7.62" y="22.86" size="1.778" layer="96" rot="R90"/>
+<instance part="+3V4" gate="G$1" x="-17.78" y="27.94" smashed="yes">
+<attribute name="VALUE" x="-20.32" y="22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$4" gate="G$1" x="66.04" y="116.84" smashed="yes">
 <attribute name="VALUE" x="67.31" y="119.761" size="1.778" layer="96"/>
@@ -6307,8 +6361,8 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <attribute name="NAME" x="97.79" y="49.911" size="1.778" layer="95"/>
 <attribute name="VALUE" x="100.33" y="54.483" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="X1" gate="-2" x="-30.48" y="0" smashed="yes">
-<attribute name="NAME" x="-31.75" y="0.889" size="1.778" layer="95" rot="R180"/>
+<instance part="X1" gate="-2" x="5.08" y="0" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.35" y="-0.889" size="1.778" layer="95"/>
 </instance>
 <instance part="X1" gate="-3" x="2.54" y="50.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="3.81" y="49.911" size="1.778" layer="95"/>
@@ -6332,15 +6386,20 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="25.4" x2="-5.08" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="-30.48" y1="-20.32" x2="-30.48" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="-35.56" x2="-5.08" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-3" pin="KL"/>
+</segment>
+<segment>
+<pinref part="T3" gate="G$1" pin="G"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-17.78" y1="5.08" x2="-17.78" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="17.78" x2="-22.86" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="17.78" x2="-22.86" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<wire x1="-17.78" y1="17.78" x2="-17.78" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-17.78" y="17.78"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6391,11 +6450,6 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <wire x1="-7.62" y1="71.12" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+2" gate="1" pin="+12V"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="25.4" x2="-17.78" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$4" gate="G$1" pin="+"/>
 <pinref part="P+3" gate="1" pin="+12V"/>
 <wire x1="66.04" y1="121.92" x2="66.04" y2="127" width="0.1524" layer="91"/>
@@ -6411,6 +6465,11 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <wire x1="-20.32" y1="-30.48" x2="-5.08" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-4" pin="KL"/>
 </segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="P+2" gate="1" pin="+12V"/>
+<wire x1="-5.08" y1="20.32" x2="-5.08" y2="25.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -6425,13 +6484,6 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="T1" gate="T" pin="G"/>
 <wire x1="-20.32" y1="114.3" x2="-15.24" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GPIO16" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="114.3" x2="-38.1" y2="114.3" width="0.1524" layer="91"/>
-<label x="-38.1" y="114.3" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -6450,24 +6502,6 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <pinref part="X1" gate="-3" pin="KL"/>
 <wire x1="-7.62" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
 <junction x="-7.62" y="50.8"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="T3" gate="G$1" pin="G"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="5.08" x2="-17.78" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GPIO21" class="0">
-<segment>
-<pinref part="T3" gate="G$1" pin="D"/>
-<wire x1="-10.16" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
-<label x="-2.54" y="0" size="1.27" layer="95"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="0.1524" layer="91"/>
-<junction x="-5.08" y="0"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6489,25 +6523,11 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <wire x1="50.8" y1="93.98" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GPIO12" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
-<label x="33.02" y="93.98" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U$4" gate="G$2" pin="O"/>
 <wire x1="99.06" y1="119.38" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="X4" gate="-1" pin="KL"/>
-</segment>
-</net>
-<net name="GPIO26" class="0">
-<segment>
-<wire x1="91.44" y1="50.8" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
-<label x="81.28" y="50.8" size="1.27" layer="95"/>
-<pinref part="X4" gate="-4" pin="KL"/>
 </segment>
 </net>
 <net name="V_SOL" class="0">
@@ -6581,20 +6601,6 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <wire x1="106.68" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="X1" gate="-2" pin="KL"/>
-<pinref part="T3" gate="G$1" pin="S"/>
-<wire x1="-25.4" y1="0" x2="-20.32" y2="0" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GPIO19" class="0">
-<segment>
-<pinref part="T2" gate="T" pin="S"/>
-<wire x1="-25.4" y1="50.8" x2="-33.02" y2="50.8" width="0.1524" layer="91"/>
-<label x="-33.02" y="50.8" size="1.27" layer="95"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="X3" gate="-2" pin="KL"/>
@@ -6607,6 +6613,57 @@ plastic packages.&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CHGI" class="0">
+<segment>
+<pinref part="T3" gate="G$1" pin="D"/>
+<wire x1="-10.16" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="0" width="0.1524" layer="91"/>
+<label x="-7.62" y="0" size="1.27" layer="95"/>
+<pinref part="X1" gate="-2" pin="KL"/>
+<wire x1="-5.08" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
+<junction x="-5.08" y="0"/>
+</segment>
+</net>
+<net name="GPIO4" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="93.98" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
+<label x="30.48" y="93.98" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="GPIO10" class="0">
+<segment>
+<pinref part="T2" gate="T" pin="S"/>
+<wire x1="-25.4" y1="50.8" x2="-33.02" y2="50.8" width="0.1524" layer="91"/>
+<label x="-33.02" y="50.8" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="GPIO9" class="0">
+<segment>
+<pinref part="X4" gate="-4" pin="KL"/>
+<wire x1="91.44" y1="50.8" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
+<label x="78.74" y="50.8" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="GPIO26" class="0">
+<segment>
+<pinref part="T3" gate="G$1" pin="S"/>
+<wire x1="-20.32" y1="0" x2="-22.86" y2="0" width="0.1524" layer="91"/>
+<label x="-30.48" y="0" size="1.27" layer="95"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-22.86" y1="0" x2="-30.48" y2="0" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="5.08" x2="-22.86" y2="0" width="0.1524" layer="91"/>
+<junction x="-22.86" y="0"/>
+</segment>
+</net>
+<net name="GPIO13" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="114.3" x2="-38.1" y2="114.3" width="0.1524" layer="91"/>
+<label x="-38.1" y="114.3" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>

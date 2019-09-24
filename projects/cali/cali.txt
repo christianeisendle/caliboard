@@ -1,0 +1,38 @@
+Partlist
+
+Exported from cali.sch at 23.09.19 20:38
+
+EAGLE Version 9.5.0 Copyright (c) 1988-2019 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value           Device          Package                 Library       Sheet
+
+D1       BAS316          BAS316          SOD323(F)               nxp_60        2
+R1       100             R-EU_R1206      R1206                   rcl           2
+R2       100             R-EU_R1206      R1206                   rcl           2
+R3       10k             R-EU_R1206      R1206                   rcl           2
+R4       1k              R-EU_R1206      R1206                   rcl           2
+R5       10k             R-EU_R1206      R1206                   rcl           2
+R6       100             R-EU_R1206      R1206                   rcl           2
+R7       10k             R-EU_R1206      R1206                   rcl           2
+R8       1k              R-EU_R1206      R1206                   rcl           2
+R9       10k             R-EU_R1206      R1206                   rcl           2
+R10      1k              R-EU_R1206      R1206                   rcl           2
+R11      10k             R-EU_R1206      R1206                   rcl           2
+R12      1k              R-EU_R1206      R1206                   rcl           2
+R13      0               R-EU_R1206      R1206                   rcl           2
+R14      2k              R-EU_R1206      R1206                   rcl           2
+R15      0               R-EU_R1206      R1206                   rcl           2
+T1       IRLML2502       MOSFET-N-SOT23  SOT23                   we-transistor 2
+T2       IRLML2502       MOSFET-N-SOT23  SOT23                   we-transistor 2
+T3       2N7002E         2N7002E         SOT23                   nxp_60        2
+T4       IRLML2502       MOSFET-N-SOT23  SOT23                   we-transistor 2
+U$1      ADC-4CH-ADS1115 ADC-4CH-ADS1115 ADC-4CH-ADS1115         diy-modules   1
+U$2      RPI-ZERO        RPI-ZERO        RASP_PI_ZERO_BOARD_FULL rpi-zero      1
+U$3      INA219          INA219          INA219                  rpi-zero      1
+U$4      FINDER-36.11    FINDER-36.11    FINDER-36.11            relay2        2
+X1                       AK500/4         AK500/4                 con-ptr500    2
+X2                       AK500/4         AK500/4                 con-ptr500    2
+X3                       AK500/4         AK500/4                 con-ptr500    2
+X4                       AK500/4         AK500/4                 con-ptr500    2
