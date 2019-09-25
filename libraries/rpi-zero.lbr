@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -631,16 +630,16 @@ Source: 3M</description>
 </package>
 <package name="RASP_PI_ZERO_BOARD_FULL">
 <description>Raspberry Pi board model B+, full outline with position of big connectors &amp;amp; drill holes</description>
-<wire x1="0" y1="3" x2="3" y2="0" width="0.254" layer="52" curve="90"/>
-<wire x1="3" y1="0" x2="6.85" y2="0" width="0.254" layer="52"/>
-<wire x1="6.85" y1="0" x2="14.35" y2="0" width="0.254" layer="52"/>
-<wire x1="14.35" y1="0" x2="62" y2="0" width="0.254" layer="52"/>
-<wire x1="62" y1="0" x2="65" y2="3" width="0.254" layer="52" curve="90"/>
-<wire x1="65" y1="3" x2="65" y2="27" width="0.254" layer="52"/>
-<wire x1="65" y1="27" x2="62" y2="30" width="0.254" layer="52" curve="90"/>
-<wire x1="62" y1="30" x2="3" y2="30" width="0.254" layer="52"/>
-<wire x1="3" y1="30" x2="0" y2="27" width="0.254" layer="52" curve="90"/>
-<wire x1="0" y1="27" x2="0" y2="3" width="0.254" layer="52"/>
+<wire x1="0" y1="3" x2="3" y2="0" width="0.254" layer="255" curve="90"/>
+<wire x1="3" y1="0" x2="6.85" y2="0" width="0.254" layer="255"/>
+<wire x1="6.85" y1="0" x2="14.35" y2="0" width="0.254" layer="255"/>
+<wire x1="14.35" y1="0" x2="62" y2="0" width="0.254" layer="255"/>
+<wire x1="62" y1="0" x2="65" y2="3" width="0.254" layer="255" curve="90"/>
+<wire x1="65" y1="3" x2="65" y2="27" width="0.254" layer="255"/>
+<wire x1="65" y1="27" x2="62" y2="30" width="0.254" layer="255" curve="90"/>
+<wire x1="62" y1="30" x2="3" y2="30" width="0.254" layer="255"/>
+<wire x1="3" y1="30" x2="0" y2="27" width="0.254" layer="255" curve="90"/>
+<wire x1="0" y1="27" x2="0" y2="3" width="0.254" layer="255"/>
 <wire x1="7.1" y1="29.04" x2="7.1" y2="26.5" width="0.127" layer="21"/>
 <wire x1="7.1" y1="26.5" x2="7.1" y2="23.96" width="0.127" layer="21"/>
 <wire x1="7.1" y1="23.96" x2="8.0525" y2="23.96" width="0.127" layer="21"/>
@@ -654,12 +653,12 @@ Source: 3M</description>
 <wire x1="8.0525" y1="23.96" x2="8.0525" y2="23.6425" width="0.127" layer="21"/>
 <wire x1="8.0525" y1="23.6425" x2="8.6875" y2="23.6425" width="0.127" layer="21"/>
 <wire x1="8.6875" y1="23.6425" x2="8.6875" y2="23.96" width="0.127" layer="21"/>
-<wire x1="6.85" y1="0" x2="6.85" y2="5.75" width="0.127" layer="52"/>
-<wire x1="6.85" y1="5.75" x2="14.35" y2="5.75" width="0.127" layer="52"/>
-<wire x1="14.35" y1="5.75" x2="14.35" y2="0" width="0.127" layer="52"/>
-<wire x1="6.85" y1="0" x2="6.6" y2="-0.5" width="0.127" layer="52"/>
-<wire x1="6.6" y1="-0.5" x2="14.6" y2="-0.5" width="0.127" layer="52"/>
-<wire x1="14.6" y1="-0.5" x2="14.35" y2="0" width="0.127" layer="52"/>
+<wire x1="6.85" y1="0" x2="6.85" y2="5.75" width="0.127" layer="255"/>
+<wire x1="6.85" y1="5.75" x2="14.35" y2="5.75" width="0.127" layer="255"/>
+<wire x1="14.35" y1="5.75" x2="14.35" y2="0" width="0.127" layer="255"/>
+<wire x1="6.85" y1="0" x2="6.6" y2="-0.5" width="0.127" layer="255"/>
+<wire x1="6.6" y1="-0.5" x2="14.6" y2="-0.5" width="0.127" layer="255"/>
+<wire x1="14.6" y1="-0.5" x2="14.35" y2="0" width="0.127" layer="255"/>
 <pad name="1" x="8.37" y="25.23" drill="1" diameter="1.778" shape="square"/>
 <pad name="2" x="8.37" y="27.77" drill="1" diameter="1.778"/>
 <pad name="3" x="10.91" y="25.23" drill="1" diameter="1.778"/>
@@ -701,22 +700,22 @@ Source: 3M</description>
 <pad name="39" x="56.63" y="25.23" drill="1" diameter="1.778"/>
 <pad name="40" x="56.63" y="27.77" drill="1" diameter="1.778"/>
 <text x="8.0525" y="22.3725" size="1.016" layer="21" font="vector" ratio="10">1</text>
-<wire x1="36.9" y1="0" x2="37.75" y2="0" width="0.254" layer="52"/>
-<wire x1="37.75" y1="0" x2="45.25" y2="0" width="0.254" layer="52"/>
-<wire x1="37.75" y1="0" x2="37.75" y2="5.75" width="0.127" layer="52"/>
-<wire x1="37.75" y1="5.75" x2="45.25" y2="5.75" width="0.127" layer="52"/>
-<wire x1="45.25" y1="5.75" x2="45.25" y2="0" width="0.127" layer="52"/>
-<wire x1="37.75" y1="0" x2="37.5" y2="-0.5" width="0.127" layer="52"/>
-<wire x1="37.5" y1="-0.5" x2="45.5" y2="-0.5" width="0.127" layer="52"/>
-<wire x1="45.5" y1="-0.5" x2="45.25" y2="0" width="0.127" layer="52"/>
-<wire x1="49.5" y1="0" x2="50.35" y2="0" width="0.254" layer="52"/>
-<wire x1="50.35" y1="0" x2="57.85" y2="0" width="0.254" layer="52"/>
-<wire x1="50.35" y1="0" x2="50.35" y2="5.75" width="0.127" layer="52"/>
-<wire x1="50.35" y1="5.75" x2="57.85" y2="5.75" width="0.127" layer="52"/>
-<wire x1="57.85" y1="5.75" x2="57.85" y2="0" width="0.127" layer="52"/>
-<wire x1="50.35" y1="0" x2="50.1" y2="-0.5" width="0.127" layer="52"/>
-<wire x1="50.1" y1="-0.5" x2="58.1" y2="-0.5" width="0.127" layer="52"/>
-<wire x1="58.1" y1="-0.5" x2="57.85" y2="0" width="0.127" layer="52"/>
+<wire x1="36.9" y1="0" x2="37.75" y2="0" width="0.254" layer="255"/>
+<wire x1="37.75" y1="0" x2="45.25" y2="0" width="0.254" layer="255"/>
+<wire x1="37.75" y1="0" x2="37.75" y2="5.75" width="0.127" layer="255"/>
+<wire x1="37.75" y1="5.75" x2="45.25" y2="5.75" width="0.127" layer="255"/>
+<wire x1="45.25" y1="5.75" x2="45.25" y2="0" width="0.127" layer="255"/>
+<wire x1="37.75" y1="0" x2="37.5" y2="-0.5" width="0.127" layer="255"/>
+<wire x1="37.5" y1="-0.5" x2="45.5" y2="-0.5" width="0.127" layer="255"/>
+<wire x1="45.5" y1="-0.5" x2="45.25" y2="0" width="0.127" layer="255"/>
+<wire x1="49.5" y1="0" x2="50.35" y2="0" width="0.254" layer="255"/>
+<wire x1="50.35" y1="0" x2="57.85" y2="0" width="0.254" layer="255"/>
+<wire x1="50.35" y1="0" x2="50.35" y2="5.75" width="0.127" layer="255"/>
+<wire x1="50.35" y1="5.75" x2="57.85" y2="5.75" width="0.127" layer="255"/>
+<wire x1="57.85" y1="5.75" x2="57.85" y2="0" width="0.127" layer="255"/>
+<wire x1="50.35" y1="0" x2="50.1" y2="-0.5" width="0.127" layer="255"/>
+<wire x1="50.1" y1="-0.5" x2="58.1" y2="-0.5" width="0.127" layer="255"/>
+<wire x1="58.1" y1="-0.5" x2="57.85" y2="0" width="0.127" layer="255"/>
 </package>
 <package name="RCL_C0603K">
 <description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0603 reflow solder&lt;/b&gt;&lt;p&gt;
@@ -813,20 +812,20 @@ grid 5.08 mm, diameter 8.5 mm</description>
 </package>
 <package name="INA219">
 <description>INA 219 Module</description>
-<circle x="22.86" y="19.685" radius="1.397" width="0.127" layer="52"/>
+<circle x="22.86" y="19.685" radius="1.397" width="0.127" layer="255"/>
 <pad name="GND" x="9.271" y="2.794" drill="1.016" diameter="1.778"/>
 <pad name="VCC" x="6.731" y="2.794" drill="1.016" diameter="1.778"/>
-<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="21" curve="-90"/>
-<wire x1="0" y1="2.54" x2="0" y2="19.812" width="0.127" layer="21"/>
-<wire x1="0" y1="19.812" x2="2.54" y2="22.352" width="0.127" layer="21" curve="-90"/>
-<wire x1="2.54" y1="22.352" x2="22.86" y2="22.352" width="0.127" layer="21"/>
-<wire x1="22.86" y1="22.352" x2="25.4" y2="19.812" width="0.127" layer="21" curve="-90"/>
-<wire x1="25.4" y1="19.812" x2="25.4" y2="2.54" width="0.127" layer="21"/>
-<wire x1="25.4" y1="2.54" x2="22.86" y2="0" width="0.127" layer="21" curve="-90"/>
-<wire x1="22.86" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
-<circle x="2.54" y="19.685" radius="1.397" width="0.127" layer="52"/>
-<circle x="22.86" y="2.54" radius="1.397" width="0.127" layer="52"/>
-<circle x="2.54" y="2.54" radius="1.397" width="0.127" layer="52"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="255" curve="-90"/>
+<wire x1="0" y1="2.54" x2="0" y2="19.812" width="0.127" layer="255"/>
+<wire x1="0" y1="19.812" x2="2.54" y2="22.352" width="0.127" layer="255" curve="-90"/>
+<wire x1="2.54" y1="22.352" x2="22.86" y2="22.352" width="0.127" layer="255"/>
+<wire x1="22.86" y1="22.352" x2="25.4" y2="19.812" width="0.127" layer="255" curve="-90"/>
+<wire x1="25.4" y1="19.812" x2="25.4" y2="2.54" width="0.127" layer="255"/>
+<wire x1="25.4" y1="2.54" x2="22.86" y2="0" width="0.127" layer="255" curve="-90"/>
+<wire x1="22.86" y1="0" x2="2.54" y2="0" width="0.127" layer="255"/>
+<circle x="2.54" y="19.685" radius="1.397" width="0.127" layer="255"/>
+<circle x="22.86" y="2.54" radius="1.397" width="0.127" layer="255"/>
+<circle x="2.54" y="2.54" radius="1.397" width="0.127" layer="255"/>
 <pad name="SCL" x="11.811" y="2.794" drill="1.016" diameter="1.778"/>
 <pad name="SDA" x="14.351" y="2.794" drill="1.016" diameter="1.778"/>
 <pad name="VIN-" x="16.891" y="2.794" drill="1.016" diameter="1.778"/>

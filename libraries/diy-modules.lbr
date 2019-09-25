@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -57,6 +56,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Hidden" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="102" name="Changes" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="HELP" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
@@ -7865,8 +7865,8 @@ Footprint for SMD assembly.</description>
 </package>
 <package name="ADC-4CH-ADS1115">
 <description>&lt;b&gt;4 Channel 16-Bit Analog-to-Digital Converter&lt;/b&gt; based on &lt;b&gt;ADS1115&lt;/b&gt; chip</description>
-<wire x1="-8.89" y1="14.224" x2="8.89" y2="14.224" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-14.224" x2="-8.89" y2="-14.224" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="14.224" x2="8.89" y2="14.224" width="0.127" layer="255"/>
+<wire x1="8.89" y1="-14.224" x2="-8.89" y2="-14.224" width="0.127" layer="255"/>
 <pad name="1" x="-6.35" y="11.43" drill="1" shape="square"/>
 <pad name="2" x="-6.35" y="8.89" drill="1"/>
 <pad name="3" x="-6.35" y="6.35" drill="1"/>
@@ -7926,14 +7926,14 @@ Footprint for SMD assembly.</description>
 <wire x1="-5.715" y1="-7.62" x2="-5.08" y2="-6.985" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-6.985" x2="-5.08" y2="-5.715" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-5.715" x2="-5.715" y2="-5.08" width="0.127" layer="21"/>
-<text x="-4.445" y="11.43" size="1.27" layer="21" align="center-left">VDD</text>
-<text x="-4.445" y="8.89" size="1.27" layer="21" align="center-left">GND</text>
-<text x="-4.445" y="6.35" size="1.27" layer="21" align="center-left">SCL</text>
-<text x="-4.445" y="3.81" size="1.27" layer="21" align="center-left">SDA</text>
-<text x="-4.445" y="1.27" size="1.27" layer="21" align="center-left">ADDR</text>
-<text x="-4.445" y="-1.27" size="1.27" layer="21" align="center-left">ALRT</text>
-<text x="-4.445" y="-3.81" size="1.27" layer="21" align="center-left">A0</text>
-<text x="-4.445" y="-6.35" size="1.27" layer="21" align="center-left">A1</text>
+<text x="-4.445" y="11.43" size="1.27" layer="255" align="center-left">VDD</text>
+<text x="-4.445" y="8.89" size="1.27" layer="255" align="center-left">GND</text>
+<text x="-4.445" y="6.35" size="1.27" layer="255" align="center-left">SCL</text>
+<text x="-4.445" y="3.81" size="1.27" layer="255" align="center-left">SDA</text>
+<text x="-4.445" y="1.27" size="1.27" layer="255" align="center-left">ADDR</text>
+<text x="-4.445" y="-1.27" size="1.27" layer="255" align="center-left">ALRT</text>
+<text x="-4.445" y="-3.81" size="1.27" layer="255" align="center-left">A0</text>
+<text x="-4.445" y="-6.35" size="1.27" layer="255" align="center-left">A1</text>
 <pad name="9" x="-6.35" y="-8.89" drill="1"/>
 <pad name="10" x="-6.35" y="-11.43" drill="1"/>
 <wire x1="-6.985" y1="-7.62" x2="-7.62" y2="-8.255" width="0.127" layer="21"/>
@@ -7949,10 +7949,10 @@ Footprint for SMD assembly.</description>
 <wire x1="-5.715" y1="-10.16" x2="-5.08" y2="-9.525" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-9.525" x2="-5.08" y2="-8.255" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-8.255" x2="-5.715" y2="-7.62" width="0.127" layer="21"/>
-<text x="-4.445" y="-8.89" size="1.27" layer="21" align="center-left">A2</text>
-<text x="-4.445" y="-11.43" size="1.27" layer="21" align="center-left">A3</text>
-<wire x1="8.89" y1="14.224" x2="8.89" y2="-14.224" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="14.224" x2="-8.89" y2="-14.224" width="0.127" layer="21"/>
+<text x="-4.445" y="-8.89" size="1.27" layer="255" align="center-left">A2</text>
+<text x="-4.445" y="-11.43" size="1.27" layer="255" align="center-left">A3</text>
+<wire x1="8.89" y1="14.224" x2="8.89" y2="-14.224" width="0.127" layer="255"/>
+<wire x1="-8.89" y1="14.224" x2="-8.89" y2="-14.224" width="0.127" layer="255"/>
 </package>
 <package name="WIRELESS-BLUETOOTH-BK8000">
 <description>&lt;b&gt;Bluetooth Audio Module&lt;/b&gt; based on &lt;b&gt;BK8000L&lt;/b&gt; chip</description>
