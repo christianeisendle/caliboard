@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5003,6 +5003,9 @@ Source: http://www.st.com/stonline/books/pdf/docs/1330.pdf</description>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R1206" value="DNP"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R1206" value="10k"/>
+<part name="D1" library="nxp_60" deviceset="BZX84J" device="" value="BZX384-3V3"/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5012,7 +5015,7 @@ Source: http://www.st.com/stonline/books/pdf/docs/1330.pdf</description>
 <wire x1="139.7" y1="0" x2="139.7" y2="99.06" width="0.1524" layer="254"/>
 <wire x1="139.7" y1="99.06" x2="0" y2="99.06" width="0.1524" layer="254"/>
 <wire x1="0" y1="99.06" x2="0" y2="0" width="0.1524" layer="254"/>
-<text x="111.76" y="5.08" size="2.54" layer="254">Cali Board v1.3</text>
+<text x="111.76" y="5.08" size="2.54" layer="254">Cali Board v1.5</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="38.1" y="22.86" smashed="yes">
@@ -5465,6 +5468,18 @@ Source: http://www.st.com/stonline/books/pdf/docs/1330.pdf</description>
 <instance part="+3V8" gate="G$1" x="-53.34" y="175.26" smashed="yes">
 <attribute name="VALUE" x="-55.88" y="170.18" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="X1" gate="-1" x="-63.5" y="55.88" smashed="yes">
+<attribute name="NAME" x="-64.77" y="56.769" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R2" gate="G$1" x="-45.72" y="55.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="-41.91" y="54.3814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-41.91" y="59.182" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D1" gate="G$1" x="-35.56" y="48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-37.465" y="46.482" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-32.131" y="38.862" size="1.778" layer="96" font="vector" rot="R90"/>
+</instance>
+<instance part="GND7" gate="1" x="-35.56" y="33.02" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -5576,6 +5591,11 @@ Source: http://www.st.com/stonline/books/pdf/docs/1330.pdf</description>
 <pinref part="U$4" gate="G$1" pin="-"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="63.5" y1="149.86" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="-35.56" y1="35.56" x2="-35.56" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -5786,6 +5806,24 @@ Source: http://www.st.com/stonline/books/pdf/docs/1330.pdf</description>
 <pinref part="IC1" gate="G$1" pin="IN2"/>
 <wire x1="-43.18" y1="137.16" x2="-58.42" y2="137.16" width="0.1524" layer="91"/>
 <label x="-60.96" y="137.16" size="1.27" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="X1" gate="-1" pin="KL"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="-58.42" y1="55.88" x2="-50.8" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPIO19" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="-40.64" y1="55.88" x2="-35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="55.88" x2="-35.56" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="55.88" x2="-17.78" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-35.56" y="55.88"/>
+<label x="-22.86" y="55.88" size="1.27" layer="95"/>
 </segment>
 </net>
 </nets>

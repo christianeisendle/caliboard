@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -170,6 +170,7 @@
 <layer number="255" name="HELP" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.YnVzaW5lc3M6ZWlzZW5kbGU" projecturn="a.YnVzaW5lc3M6ZWlzZW5kbGUjRDIwMjEwMjAxMzc4MTcyOTAx" f3durn="urn:adsk.wipprod:dm.lineage:eCGwQmRcSUigPiUjFh4LgA" pcbguid="cfd05f05-6c82-4ab4-a93a-90a34d57cd22" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="486f0e6d-648d-4e1b-b5ac-af7fca4b0c5f" lastsyncedrevisionid="486f0e6d-648d-4e1b-b5ac-af7fca4b0c5f" lastboardhashguid="fca3c6b0-a0bf-6b08-91ea-aeebe4905dde" lastpushedtime="2022-08-21T08:59:15Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="0" x2="89.79" y2="0" width="0" layer="20"/>
 <wire x1="89.79" y1="0" x2="89.79" y2="61.9" width="0" layer="20"/>
@@ -194,7 +195,7 @@
 <text x="46.99" y="15.24" size="1.27" layer="25" rot="R90">COM</text>
 <text x="46.99" y="10.16" size="1.27" layer="25" rot="R90">NO</text>
 <text x="46.99" y="24.13" size="1.27" layer="25" rot="R90">TEMP</text>
-<text x="10.16" y="33.02" size="1.778" layer="26" rot="MR270">Caliboard 1.4</text>
+<text x="10.16" y="33.02" size="1.778" layer="26" rot="MR270">Caliboard 1.5</text>
 <text x="6.35" y="41.91" size="1.778" layer="26" rot="MR270">(c) Christian Eisendle</text>
 </plain>
 <libraries>
@@ -2085,10 +2086,20 @@ design rules under a new name.</description>
 <element name="D2" library="nxp_60" package="SOD323(F)" value="BZX384-3V3" x="72.39" y="50.8" smashed="yes">
 <attribute name="NAME" x="74.39" y="51.29" size="1" layer="25" font="vector"/>
 </element>
-<element name="R1" library="rcl" package="R1206" value="DNP" x="73.66" y="15.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="74.93" y="16.51" size="1.27" layer="25" rot="R270"/>
-<attribute name="POPULARITY" value="41" x="73.66" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="73.66" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R1" library="rcl" package="R1206" value="DNP" x="73.66" y="23.495" smashed="yes" rot="R270">
+<attribute name="NAME" x="74.93" y="24.765" size="1.27" layer="25" rot="R270"/>
+<attribute name="POPULARITY" value="41" x="73.66" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="73.66" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R2" library="rcl" package="R1206" value="10k" x="74.93" y="13.97" smashed="yes">
+<attribute name="NAME" x="73.66" y="15.24" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="41" x="74.93" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="74.93" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="73.66" y="11.43" size="1.27" layer="27"/>
+</element>
+<element name="D1" library="nxp_60" package="SOD323(F)" value="BZX384-3V3" x="69.85" y="15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.34" y="13.24" size="1" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="68.85" y="13.24" size="1" layer="27" font="vector" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -2136,6 +2147,7 @@ design rules under a new name.</description>
 <wire x1="71.29" y1="50.8" x2="70.655" y2="50.165" width="0.254" layer="1"/>
 <wire x1="70.655" y1="50.165" x2="70.485" y2="50.165" width="0.254" layer="1"/>
 <via x="70.485" y="50.165" extent="1-16" drill="0.35"/>
+<contactref element="D1" pad="2"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$2" pad="1"/>
@@ -2256,6 +2268,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPIO19">
 <contactref element="U$2" pad="35"/>
+<contactref element="R2" pad="1"/>
+<contactref element="D1" pad="1"/>
+<wire x1="73.508" y1="13.97" x2="70.02" y2="13.97" width="0.1524" layer="1"/>
+<wire x1="70.02" y1="13.97" x2="69.935" y2="14.055" width="0.1524" layer="1"/>
+<wire x1="69.935" y1="14.055" x2="69.85" y2="14.14" width="0.1524" layer="1"/>
+<wire x1="71.108" y1="55.964" x2="69.922" y2="57.15" width="0.1524" layer="1"/>
+<wire x1="65.405" y1="57.15" x2="64.77" y2="56.515" width="0.1524" layer="1"/>
+<wire x1="64.77" y1="19.22" x2="69.85" y2="14.14" width="0.1524" layer="1"/>
+<wire x1="69.922" y1="57.15" x2="65.405" y2="57.15" width="0.1524" layer="1"/>
+<wire x1="64.77" y1="56.515" x2="64.77" y2="19.22" width="0.1524" layer="1"/>
 </signal>
 <signal name="ADC0">
 <contactref element="U$1" pad="7"/>
@@ -2410,9 +2432,9 @@ design rules under a new name.</description>
 <contactref element="X1" pad="2"/>
 <contactref element="R4" pad="2"/>
 <contactref element="R1" pad="1"/>
-<wire x1="85.09" y1="16.5608" x2="73.7612" y2="16.5608" width="0.254" layer="1"/>
-<wire x1="73.7612" y1="16.5608" x2="73.66" y2="16.662" width="0.1524" layer="1"/>
-<wire x1="73.66" y1="16.662" x2="73.66" y2="41.758" width="0.254" layer="1"/>
+<wire x1="85.09" y1="16.5608" x2="82.0162" y2="16.5608" width="0.254" layer="1"/>
+<wire x1="82.0162" y1="16.5608" x2="73.66" y2="24.917" width="0.1524" layer="1"/>
+<wire x1="73.66" y1="24.917" x2="73.66" y2="41.758" width="0.254" layer="1"/>
 </signal>
 <signal name="DRVOUT3">
 <contactref element="IC1" pad="13"/>
@@ -2439,6 +2461,12 @@ design rules under a new name.</description>
 <wire x1="63.5" y1="41.91" x2="63.5" y2="55.952" width="0.254" layer="1"/>
 <wire x1="63.5" y1="55.952" x2="63.488" y2="55.964" width="0.254" layer="1"/>
 </signal>
+<signal name="N$1">
+<contactref element="X1" pad="1"/>
+<contactref element="R2" pad="2"/>
+<wire x1="76.352" y1="13.97" x2="82.6516" y2="13.97" width="0.1524" layer="1"/>
+<wire x1="82.6516" y1="13.97" x2="85.09" y2="11.5316" width="0.1524" layer="1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -2454,6 +2482,11 @@ design rules under a new name.</description>
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
